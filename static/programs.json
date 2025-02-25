@@ -1,0 +1,56 @@
+{
+	"eth_msc_electrical": {
+		"name": "ETH - MSC Electrical Engineering",
+		"school": ["ETH", "ETHZ"],
+		"access": "Telecom",
+		"type": "MSC",
+		"fields": ["Electrical Engineering, Computer Science"],
+		"open_date": "2018-01-01",
+		"close_date": "2018-02-01",
+		"logo": "https://www.tum.de/fileadmin/w00bfo/www/NewsMigration/news_images/logo-tum.png",
+		"link": "https://www.ethz.ch/en.html",
+		"country": ["Suisse", "Switzerland"],
+		"paragraphs": [
+			"This is a test text for the ETH Zurich MSC in Electrical Engineering.",
+			"Here is a second line of text."
+		]
+	},
+	"eth_msc_electrical2": {
+		"name": "ETH - MSC Electrical Engineering",
+		"school": ["ETH", "ETHZ"],
+		"access": "Telecom",
+		"type": "MSC",
+		"fields": ["Electrique"],
+		"open_date": "2018-01-01",
+		"close_date": "2018-01-17",
+		"logo": "https://www.tum.de/fileadmin/w00bfo/www/NewsMigration/news_images/logo-tum.png",
+		"link": "https://www.ethz.ch/en.html",
+		"country": ["Suisse", "Switzerland"],
+		"paragraphs": [
+			"This is a test text for the ETH Zurich MSC in Electrical Engineering.",
+			"Here is a second line of text."
+		]
+	},
+	"eth_msc_electrical3": {
+		"name": "ETH - MSC Electrical Engineering",
+		"school": ["ETH", "ETHZ"],
+		"access": "Telecom",
+		"type": "MSC",
+		"fields": ["Electrique"],
+		"open_date": "2018-01-01",
+		"close_date": "2018-01-17",
+		"logo": "https://www.tum.de/fileadmin/w00bfo/www/NewsMigration/news_images/logo-tum.png",
+		"link": "https://www.ethz.ch/en.html",
+		"country": ["Suisse", "Switzerland"],
+		"paragraphs": [
+			"This is a test text for the ETH Zurich MSC in Electrical Engineering.",
+			"Here is a second line of text."
+		]
+	},
+	"eth_msc_inf": {
+		"school": "ETH",
+		"access": "Telecom",
+		"type": "MSC",
+		"fields": ["Informatique"]
+	}
+}

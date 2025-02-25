@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FullLogo from '$lib/components/3atelecom/logo/FullLogo.svelte';
+	import FullLogo from '$lib/components/3atelecom/header/FullLogo.svelte';
 	import Dropdown from '$lib/components/3atelecom/header/Dropdown.svelte';
 	import { cn } from '$lib/utils.js';
 	let { class: className } = $props();
