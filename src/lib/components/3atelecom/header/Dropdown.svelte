@@ -1,5 +1,5 @@
 <script lang="ts">
-	let { size }: { size: string } = $props();
+	let { size, triggerClass }: { size: string; triggerClass: string } = $props();
 	import { AlignRight } from 'lucide-svelte';
 	import { House } from 'lucide-svelte';
 	import { User } from 'lucide-svelte';
@@ -14,7 +14,7 @@
 </script>
 
 <DropdownMenu.Root>
-	<DropdownMenu.Trigger>
+	<DropdownMenu.Trigger class={triggerClass}>
 		<div class="rounded-xl hover:bg-white hover:bg-opacity-25">
 			<AlignRight strokeWidth={1} {size} color="white" />
 		</div>

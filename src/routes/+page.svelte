@@ -30,9 +30,11 @@
 	const can_load_previous = $derived(passed_deadlines_count < _next_deadline_index);
 </script>
 
-<div class="flex flex-col space-y-5 px-7 pb-6 pt-8 font-inria text-lg font-normal text-white">
-	<span class="self-start">Un calendier pour tout savoir sur la 3A ...</span>
-	<span class="self-end">... avec les démarches à suivre !</span>
+<div
+	class="flex flex-col space-y-5 px-7 pb-6 pt-8 font-inria text-lg font-normal text-white sm:items-center"
+>
+	<span class="self-start sm:self-auto">Un calendier pour tout savoir sur la 3A ...</span>
+	<span class="self-end sm:self-auto">... avec les démarches à suivre !</span>
 </div>
 
 <div class="flex flex-row justify-center space-x-[-20px]">
@@ -98,9 +100,16 @@
 		<div class="flex flex-col space-y-[6px]">
 			<div class="flex flex-row items-center justify-center space-x-2">
 				<hr class="h-1 w-72 border-0 bg-white" />
-				<div class="flex flex-col font-inknut font-light leading-[16px] text-white">
-					<span>{date.slice(8, 10)}</span>
-					<span>{month_number_name_map[date.slice(5, 7)].short}</span>
+				<div class="flex flex-row items-center space-x-1">
+					<div
+						class="flex flex-col text-right font-inknut text-lg font-light leading-[16px] text-white"
+					>
+						<span>{date.slice(8, 10)}</span>
+						<span>{month_number_name_map[date.slice(5, 7)].short}</span>
+					</div>
+					<div class="font-inknut text-xl font-light leading-[16px] text-white">
+						{date.slice(0, 4)}
+					</div>
 				</div>
 			</div>
 			{#each programs as program}
