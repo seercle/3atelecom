@@ -11,8 +11,118 @@
 		"link": "https://www.ethz.ch/en.html",
 		"country": ["Suisse", "Switzerland"],
 		"paragraphs": [
-			"This is a test text for the ETH Zurich MSC in Electrical Engineering.",
-			"Here is a second line of text."
+			{
+				"title": "Title",
+				"paragraph": "This is a test text for the ETH Zurich MSC in Electrical Engineering."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			},
+			{
+				"title": "Title",
+				"paragraph": "Here is a second line of text."
+			}
 		]
 	},
 	"eth_msc_electrical2": {

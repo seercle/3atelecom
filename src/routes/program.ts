@@ -6,7 +6,7 @@ export interface Program {
 	close_date: string;
 
 	link: string;
-	paragraphs: string[];
+	paragraphs: { title: string; paragraph: string }[];
 	school: string[];
 	access: string;
 	type: string;

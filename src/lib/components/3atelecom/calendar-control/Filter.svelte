@@ -19,7 +19,7 @@
 
 	<Sheet.Content class="mx-4 px-4">
 		<Input class="mb-5 mt-6 rounded-[16px] shadow-[0px_4px_4px_0px_rgba(0,0,0,0.25)]" />
-		<ScrollArea class="h-[75%]">
+		<ScrollArea type="always" class="max-h-[80vh] overflow-y-auto">
 			<div class="ml-3 font-inria text-lg font-normal leading-normal text-black">
 				Accès à la formation
 			</div>
@@ -96,17 +96,18 @@
 					Data science
 				</Toggle>
 			</div>
-		</ScrollArea>
-		<Sheet.Footer>
-			<Sheet.Close
-				class={'w-full bg-green-300 hover:bg-green-400 ' + buttonVariants({ variant: 'outline' })}
-			>
-				Ok
-			</Sheet.Close>
 
-			<Sheet.Close class={'w-full ' + buttonVariants({ variant: 'outline' })}
-				>Réinitialiser
-			</Sheet.Close>
-		</Sheet.Footer>
+			<Sheet.Footer>
+				<Sheet.Close
+					class={'w-full bg-green-300 hover:bg-green-400 ' + buttonVariants({ variant: 'outline' })}
+				>
+					Ok
+				</Sheet.Close>
+
+				<Sheet.Close class={'w-full ' + buttonVariants({ variant: 'outline' })}
+					>Réinitialiser
+				</Sheet.Close>
+			</Sheet.Footer>
+		</ScrollArea>
 	</Sheet.Content>
 </Sheet.Root>
