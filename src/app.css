@@ -72,7 +72,10 @@
 	* {
 		@apply border-border;
 	}
+	html {
+		@apply bg-black;
+	}
 	body {
-		background: repeating-linear-gradient(to bottom, black, #e71644, black 1050px, black);
+		background: repeating-linear-gradient(to bottom, black, #e71644, black 1050px, black 200%);
 	}
 }
