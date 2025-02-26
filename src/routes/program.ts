@@ -23,8 +23,8 @@ type ProgramsDateGroup = { [date: string]: Program[] };
 function verify_date(date: string): boolean {
 	return date.match(/^\d{4}-\d{2}-\d{2}$/) != null;
 }
-
-export function group_by_day(programs: Program[]): ProgramsDateGroup {
+// groups programs by close date
+export function group_by_close_date(programs: Program[]): ProgramsDateGroup {
 	const groups: ProgramsDateGroup = {};
 	programs.forEach((program) => {
 		if (!program.close_date || !verify_date(program.close_date)) {
@@ -38,7 +38,7 @@ export function group_by_day(programs: Program[]): ProgramsDateGroup {
 	});
 	return groups;
 }
-
+// sort programs by close date
 export function sort_by_close_asc(programs: ProgramsDateGroup): ProgramDateGroup[] {
 	return Object.keys(programs)
 		.sort()
@@ -48,6 +48,23 @@ export function sort_by_close_asc(programs: ProgramsDateGroup): ProgramDateGroup
 				programs: programs[a]
 			};
 		});
+}
+// assert: programs are sorted by close date
+// returns the index of the next deadline, it can be the same day
+export function next_deadline_index(programs: ProgramDateGroup[]): number {
+	const now = new Date();
+	for (let i = 0; i < programs.length; i++) {
+		const close_date = new Date(programs[i].date);
+		if (now < close_date) {
+			return i;
+		}
+	}
+	return programs.length;
+}
+export function has_date_passed(date: string): boolean {
+	const now = new Date();
+	const close_date = new Date(date);
+	return now > close_date;
 }
 
 export const month_number_name_map: {

@@ -3,16 +3,20 @@
 	import * as Avatar from '$lib/components/ui/avatar/index.js';
 	import * as Dialog from '$lib/components/ui/dialog/index.js';
 	import CalendarDays from 'lucide-svelte/icons/calendar-days';
-	import Dl from './Dialog.svelte';
+	import FullProgramEntryField from './FullProgramEntryField.svelte';
 	import type { Program } from '../../../../routes/program';
-	import { month_number_name_map } from '../../../../routes/program';
+	import { month_number_name_map, has_date_passed } from '../../../../routes/program';
 	import ScrollArea from '$lib/components/ui/scroll-area/scroll-area.svelte';
 	let { program }: { program: Program } = $props();
 </script>
 
 <Dialog.Root>
 	<Dialog.Trigger>
-		<Card.Root class="w-80">
+		<Card.Root
+			class={has_date_passed(program.close_date)
+				? 'w-80 line-through opacity-50'
+				: 'w-80 opacity-100'}
+		>
 			<Card.Content class="px-6 py-3">
 				<div class="flex justify-between space-x-4">
 					<Avatar.Root>
@@ -53,31 +57,31 @@
 		<ScrollArea class="max-h-[80vh] overflow-y-auto">
 			<Dialog.Description class=" flex flex-col space-y-[6px]">
 				{#if program.fields}
-					<Dl title="Fields:" text={program.fields.join(', ')} />
+					<FullProgramEntryField title="Fields:" text={program.fields.join(', ')} />
 				{/if}
 				{#if program.open_date}
-					<Dl title="Opened:" text={program.open_date} />
+					<FullProgramEntryField title="Opened:" text={program.open_date} />
 				{/if}
 				{#if program.close_date}
-					<Dl title="Will close:" text={program.close_date} />
+					<FullProgramEntryField title="Will close:" text={program.close_date} />
 				{/if}
 				{#if program.link}
-					<Dl title="Lien vers la formation" text={program.link} type="link" />
+					<FullProgramEntryField title="Lien vers la formation" text={program.link} type="link" />
 				{/if}
 				{#if program.school}
-					<Dl title="School:" text={program.school.join(', ')} />
+					<FullProgramEntryField title="School:" text={program.school.join(', ')} />
 				{/if}
 				{#if program.access}
-					<Dl title="Access:" text={program.access} />
+					<FullProgramEntryField title="Access:" text={program.access} />
 				{/if}
 				{#if program.type}
-					<Dl title="Type:" text={program.type} />
+					<FullProgramEntryField title="Type:" text={program.type} />
 				{/if}
 				{#if program.country}
-					<Dl title="Country:" text={program.country.join(', ')} />
+					<FullProgramEntryField title="Country:" text={program.country.join(', ')} />
 				{/if}
 				{#each program.paragraphs as { title, paragraph }}
-					<Dl {title} text={paragraph} />
+					<FullProgramEntryField {title} text={paragraph} />
 				{/each}
 			</Dialog.Description>
 		</ScrollArea>
