@@ -13,11 +13,13 @@
 	type Props = {
 		data: Programs;
 	};
+
+	const { data }: Props = $props(); // load programs from the backend
 	const PASSED_DEADLINES_COUNT = 1;
 	const FUTURE_DEADLINES_COUNT = Number.POSITIVE_INFINITY;
 	let passed_deadlines_count = $state(PASSED_DEADLINES_COUNT);
 	let future_deadlines_count = $state(FUTURE_DEADLINES_COUNT);
-	const { data }: Props = $props();
+
 	const close_sorted_programs = sort_by_close_asc(group_by_close_date(Object.values(data)));
 	const _next_deadline_index = next_deadline_index(close_sorted_programs);
 
